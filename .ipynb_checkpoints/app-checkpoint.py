@@ -21,7 +21,6 @@ lb = pickle.load(open('label_encoder.pkl','rb'))
 # =========================repeating the same functions==========================================
 def clean_text(text):
     stemmer = PorterStemmer()
-    print(stemmer.stem("running"))
     text = re.sub("[^a-zA-Z]", " ", text)
     text = text.lower()
     text = text.split()
